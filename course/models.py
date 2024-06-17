@@ -13,5 +13,5 @@ class Course(models.Model):
         grade_level = models.PositiveSmallIntegerField()
 
 
-        def __init__(self):
+        def __str__(self):
             return f" {self.course_id} {self.course_name}"

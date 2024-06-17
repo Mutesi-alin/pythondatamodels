@@ -8,7 +8,7 @@ class Student(models.Model):
     date_of_birth=models.DateField()
     code= models.PositiveSmallIntegerField()
 
-    def __init__(self):
+    def __str__(self):
         return f" {self.first_name} {self.last_name}"
     
 

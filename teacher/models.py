@@ -14,5 +14,5 @@ class Teacher(models.Model):
         gender = models.CharField(max_length=7)
 
 
-        def __init__(self):
+        def __str__(self):
             return f" {self.first_name} {self.last_name}"
