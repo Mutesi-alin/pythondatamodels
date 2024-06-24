@@ -1,16 +1,20 @@
 from django.db import models
 
+
 class Course(models.Model):
         course_name = models.CharField(max_length=100)
         course_id= models.CharField(max_length=10)
         course_description = models.TextField()
-        class_hours = models.PositiveSmallIntegerField()
+        course_ahead = models.PositiveSmallIntegerField()
         prerequisites = models.CharField(max_length=100)
-        course_instructor =models.CharField(max_length=100)
-        assessment_requirements = models.DateField()
-        school_term =  models.PositiveSmallIntegerField()
-        course_capacity =  models.PositiveSmallIntegerField()
-        grade_level = models.PositiveSmallIntegerField()
+        teacher_id= 
+        created_at= models.DateField()
+        updated_at= models.DateField()
+        trimester= models.PositiveSmallIntegerField()
+        enrollment_limit= models.PositiveSmallIntegerField()
+        class_id=
+
+
 
 
         def __str__(self):
